@@ -54,10 +54,6 @@ rust-mastery/
 │   ├── 📂 beginner/
 │   ├── 📂 intermediate/
 │   ├── 📂 advanced/
-│── 📂 References/       
-│   ├── 📜 rust_books.md
-│   ├── 📜 online_courses.md
-│   ├── 📜 documentation_links.md
 ```
 
 ---
