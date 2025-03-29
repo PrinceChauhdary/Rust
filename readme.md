@@ -28,33 +28,33 @@ This repository will take you from the **fundamentals of Rust** to **advanced re
 ## 📂 Repository Structure  
 ```
 rust-mastery/
-│── 📜 README.md          # Overview & learning roadmap
-│── 📜 CONTRIBUTING.md    # How to contribute to this repo
-│── 📂 Basics/            # Beginner-friendly concepts
+│── 📜 README.md          
+│── 📜 CONTRIBUTING.md    
+│── 📂 Basics/           
 │   ├── 📂 01_hello_world/
 │   ├── 📂 02_variables_data_types/
 │   ├── 📂 03_control_flow/
 │   ├── 📂 04_functions/
 │   ├── 📂 05_ownership_borrowing/
-│── 📂 Intermediate/      # Core Rust programming concepts
+│── 📂 Intermediate/      
 │   ├── 📂 10_structs_enums/
 │   ├── 📂 11_traits_generics/
 │   ├── 📂 12_error_handling/
 │   ├── 📂 13_collections/
-│── 📂 Advanced/          # High-level Rust topics
+│── 📂 Advanced/          
 │   ├── 📂 20_async_tokio/
 │   ├── 📂 21_multithreading/
 │   ├── 📂 22_ffi_c_bindings/
 │   ├── 📂 23_macros_metaprogramming/
-│── 📂 Projects/          # Hands-on real-world Rust projects
+│── 📂 Projects/          
 │   ├── 📂 project_1_web_server/
 │   ├── 📂 project_2_cli_tool/
 │   ├── 📂 project_3_rust_game/
-│── 📂 Exercises/         # Practice problems & solutions
+│── 📂 Exercises/        
 │   ├── 📂 beginner/
 │   ├── 📂 intermediate/
 │   ├── 📂 advanced/
-│── 📂 References/        # Books, tutorials, and resources
+│── 📂 References/       
 │   ├── 📜 rust_books.md
 │   ├── 📜 online_courses.md
 │   ├── 📜 documentation_links.md
