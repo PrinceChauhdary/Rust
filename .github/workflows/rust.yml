@@ -14,9 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Rust
-        run: cd Rust_basic/Lesson_1  # Adjust this if your Cargo.toml is inside a subdirectory
       - name: Build
         run: cargo build --verbose
+        working-directory: Rust_basic/Lesson_1
       - name: Run tests
         run: cargo test --verbose
+        working-directory: Rust_basic/Lesson_1
