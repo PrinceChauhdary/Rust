@@ -14,9 +14,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build
-        run: cargo build --verbose
-        working-directory: Rust_basic/Lesson_1
-      - name: Run tests
-        run: cargo test --verbose
-        working-directory: Rust_basic/Lesson_1
+      - name: Find and Build All Rust Projects
+        run: |
+          for dir in Rust_basic/Lesson_1/*/ ; do
+            if [ -f "$dir/Cargo.toml" ]; then
+              echo "Building project in $dir"
+              (cd "$dir" && cargo build --verbose)
+            fi
+          done
+      - name: Find and Test All Rust Projects
+        run: |
+          for dir in Rust_basic/Lesson_1/*/ ; do
+            if [ -f "$dir/Cargo.toml" ]; then
+              echo "Running tests in $dir"
+              (cd "$dir" && cargo test --verbose)
+            fi
+          done
