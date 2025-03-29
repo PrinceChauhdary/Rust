@@ -22,8 +22,16 @@ jobs:
         with:
           toolchain: stable
 
-      - name: Build
-        run: cargo build --verbose
+      - name: Compile Rust Programs
+        run: |
+          for file in $(find . -name "*.rs"); do
+            echo "Compiling $file"
+            rustc "$file" -o "${file%.rs}.out"
+          done
 
-      - name: Run tests
-        run: cargo test --verbose
+      - name: Run Compiled Programs
+        run: |
+          for exec in $(find . -name "*.out"); do
+            echo "Running $exec"
+            $exec
+          done
