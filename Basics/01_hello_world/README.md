@@ -9,6 +9,7 @@ fn main() {
     println!("Hello, World!");
 }
 ```
+adafdsdgsr
 ##  Run the program:
 
 rustc hello.rs <br>
