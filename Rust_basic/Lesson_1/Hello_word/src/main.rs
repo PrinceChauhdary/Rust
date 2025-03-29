@@ -10,3 +10,8 @@ fn main() {
     println!("you can also cargo clean to clean the project");  
     println!("you can also cargo update to update the dependencies");
 }
+
+#[test]
+fn test_add(){
+    assert_eq!((1+2),3);
+}
